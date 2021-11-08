@@ -3,3 +3,31 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+
+/* HEADER*/
+header{
+  height: 140px;
+}
+
+.header-top{
+  height: 55%;
+  font-family: 'Acme', sans-serif;
+  color: #29b1dd;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.header-bottom{
+  height: 45%;
+  background-color: #29b1dd;
+  color: white;
+  font-size: 22px;
+}
+

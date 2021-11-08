@@ -27,7 +27,7 @@
 </head>
 <body>
 
-  <div class="container-fluid p-0 vh-100">
+  <div class="container-fluid p-0">
     <header>
 
       <div class="header-top">
@@ -36,7 +36,7 @@
       
       <div class="header-bottom d-flex align-items-center justify-content-center">
         <span class="text-uppercase">Filtra per tipo</span>
-        <select class="form-select w-auto mx-2" aria-label="Default select example">
+        <select class="form-select w-auto mx-2" id="selezione" aria-label="Default select example">
           <option selected>All</option>
           <option value="1">Animal</option>
           <option value="2">Vegetable</option>
@@ -48,7 +48,7 @@
     <main>
       <div class="container-card d-flex flex-wrap p-3 justify-content-between">
         <!--
-        <div class="card d-flex align-items-center justify-content-center">
+        <div class="card">
           <i class="carta-animals fas fa-cat"></i>
           <span class="nome-carta">CAT</span>
         </div>

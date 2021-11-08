@@ -33,13 +33,15 @@ h1{
 
 /*MAIN*/
 main{
-  height: calc(100% - 140px);
   background-color: #dddd;
 }
 
 .card{
-  height: 100px;
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 250px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 1px 1px gray;
@@ -47,8 +49,23 @@ main{
   font-size: 15px;
 }
 
-.carta-animals {
+.card i{
   font-size: 40px;
+}
+
+.card span{
+  text-transform: uppercase;
+}
+
+.blue{
   color: blue;
+}
+
+.orange{
+  color: orange;
+}
+
+.green{
+  color: green;
 }
 

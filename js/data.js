@@ -113,11 +113,31 @@ const icons = [
 	}
 ];
 
+const container = document.querySelector('.container-card')
+console.log('container', container);
+
+
 ///ANIMALI///
+
 const animali = icons.filter((icon)=>{
 	return icon.type === 'animal'
 });
 console.log('animali', animali);
+
+
+for (let i = 0; i < animali.length; i++) {
+	const animale = animali[i];
+	console.log(animale);
+
+	const card = document.createElement('div');
+	card.classList.add('card');
+	container.append(card)
+	console.log(card); 
+	card.innerHTML = 
+	`
+	<i class="${animale.family} ${animale.prefix}${animale.name} ${animale.color}" ></i> <span class="nome-carta">${animale.name}</span>
+	`	
+}
 
 
 ///VERDURE///
@@ -126,13 +146,44 @@ const verdure = icons.filter((icon)=>{
 });
 console.log('verdure', verdure);
 
+for (let i = 0; i < verdure.length; i++) {
+	const verdura = verdure[i];
+	console.log(verdura);
+
+	const card = document.createElement('div');
+	card.classList.add('card');
+	container.append(card)
+	console.log(card); 
+	card.innerHTML = 
+	`
+	<i class="${verdura.family} ${verdura.prefix}${verdura.name} ${verdura.color}" ></i> <span class="nome-carta">${verdura.name}</span>
+	`	
+}
+
+
 ///UTENTI///
 const utenti = icons.filter((icon)=>{
 	return icon.type === 'user'
 });
 console.log('utenti', utenti);
 
-const elements = document.getElementsByClassName('container-card');
-console.log(elements);
+
+for (let i = 0; i < utenti.length; i++) {
+	const utente = utenti[i];
+	console.log(utente);
+
+	const card = document.createElement('div');
+	card.classList.add('card');
+	container.append(card)
+	console.log(card); 
+  card.innerHTML = 
+	`
+	<i class="${utente.family} ${utente.prefix}${utente.name} ${utente.color}" ></i> <span class="nome-carta">${utente.name}</span>
+	`	
+}
+
+
+
+
 
 

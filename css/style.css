@@ -31,3 +31,24 @@ h1{
   font-size: 22px;
 }
 
+/*MAIN*/
+main{
+  height: calc(100% - 140px);
+  background-color: #dddd;
+}
+
+.card{
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px gray;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.carta-animals {
+  font-size: 40px;
+  color: blue;
+}
+

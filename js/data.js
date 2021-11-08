@@ -1,4 +1,4 @@
-[
+const icons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,27 @@
 		color: 'blue'
 	}
 ];
+
+///ANIMALI///
+const animali = icons.filter((icon)=>{
+	return icon.type === 'animal'
+});
+console.log('animali', animali);
+
+
+///VERDURE///
+const verdure = icons.filter((icon)=>{
+	return icon.type === 'vegetable'
+});
+console.log('verdure', verdure);
+
+///UTENTI///
+const utenti = icons.filter((icon)=>{
+	return icon.type === 'user'
+});
+console.log('utenti', utenti);
+
+const elements = document.getElementsByClassName('container-card');
+console.log(elements);
+
+
